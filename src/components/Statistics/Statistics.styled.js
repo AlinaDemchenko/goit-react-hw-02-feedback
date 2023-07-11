@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledStatistics = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   row-gap: 20px;
   flex-wrap: wrap;
   list-style: none;
@@ -13,6 +13,7 @@ export const StyledStatistics = styled.ul`
   font-weight: bold;
   color: #525252;
   text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   li {
     width: 150px;
@@ -20,32 +21,29 @@ export const StyledStatistics = styled.ul`
   }
 
   li:nth-child(1) {
-    border: 1px solid #ffb332;
     color: #ffb332;
   }
 
   li:nth-child(2) {
     color: #67baf7;
-    border: 1px solid #67baf7;
   }
 
   li:nth-child(3) {
     color: #f8365b;
-    border: 1px solid #f8365b;
   }
-
+  
   li:nth-child(4) {
-    width: 100%;
-    color: #989898;
-  }
-
-  li:nth-child(5) {
     width: 160px;
     padding: 20px 0;
     border: 2px solid #989898;
     border-radius: 15px;
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px,
-      rgb(152, 152, 152) 0px 0px 0px 3px;
+    rgb(152, 152, 152) 0px 0px 0px 3px;
+  }
+  
+  li:nth-child(5) {
+    width: 100%;
+    color: #989898;
   }
 
   span {
